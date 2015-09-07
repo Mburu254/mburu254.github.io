@@ -12,11 +12,15 @@ body {
     padding-top: 50px;
     width: 100%;
 }
+.portfolio-link{
+    color:#34495e;
+}
 .bout{
     background-color: #7f8c8d;
 }
 .port{
     padding-bottom: 50px;
+    color:#34495e;
 }
 .intro1{
     font-family: 'Poiret One', cursive;
@@ -24,7 +28,7 @@ body {
     color: #ecf0f1;
 }
 .pic{
-    width: 200px;
+    width: 220px;
     padding: 20px;
     border-radius: 50px;
 }
@@ -33,7 +37,7 @@ body {
     color: #2c3e50;
 }
 .img-responsive{
-    width:250px;
+    width:150px;
     border-radius: 50px
 }
 .colr{
@@ -75,7 +79,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #34495e;
 }
 
 h1,
@@ -117,7 +121,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #34495e;
 }
 
 hr.star-primary {
@@ -241,7 +245,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #34495e;
 
 }
 
@@ -335,7 +339,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #34495e;
     background: #fff;
 }
 
@@ -388,7 +392,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #34495e;
 }
 
 form .row:first-child .floating-label-form-group {
