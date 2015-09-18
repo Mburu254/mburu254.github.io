@@ -4,21 +4,21 @@ import java.util.Scanner;
 // A Paul Njuguna & Patience Nyarko creation
 
 public  class Calculator{
-	public static void add(int num1,int num2){
-		int result=num1+num2;
+	public static void add(double num1,double num2){
+		double result=num1+num2;
 		System.out.println("The sum is: "+result);
 	}
 
-	public static void subtract(int num1,int num2){
-		int result=num1-num2;
+	public static void subtract(double num1,double num2){
+		double result=num1-num2;
 		System.out.println("The subtration is: "+result);
 	}
-	public static void product(int num1,int num2){
-		int result=num1*num2;
+	public static void product(double num1,double num2){
+		double result=num1*num2;
 		System.out.println("The product is: "+result);
 	}
-	public static void division(int num1,int num2){
-		float result=num1/num2;
+	public static void division(double num1,double num2){
+		double result=num1/num2;
 		System.out.println("The division is: "+result);
 	}
 	public static void mod(int num1,int num2){
@@ -81,46 +81,46 @@ public  class Calculator{
 			squareRt(f1);
 		}
 		else if (option==4) {
-			int f1,f2;
+			double f1,f2;
 
 			System.out.println("Enter the first number:");
-			f1 = Integer.parseInt(in.nextLine());
+			f1 = in.nextDouble();
 
 			System.out.println("Enter the second number:");
-			f2 = Integer.parseInt(in.nextLine());
+			f2 = in.nextDouble();
 
 			add(f1,f2);
 		}
 		else if (option==5) {
-			int f1,f2;
+			double f1,f2;
 
 			System.out.println("Enter the first number:");
-			f1 = Integer.parseInt(in.nextLine());
+			f1 = in.nextDouble();
 
 			System.out.println("Enter the second number:");
-			f2 = Integer.parseInt(in.nextLine());
+			f2 = in.nextDouble();
 
 			subtract(f1,f2);
 		}
 		else if (option==6) {
-			int f1,f2;
+			double f1,f2;
 
 			System.out.println("Enter the first number:");
-			f1 = Integer.parseInt(in.nextLine());
+			f1 = in.nextDouble();
 
 			System.out.println("Enter the second number:");
-			f2 = Integer.parseInt(in.nextLine());
+			f2 = in.nextDouble();
 
 			product(f1,f2);
 		}
 		else if (option==7) {
-			int f1,f2;
+			double f1,f2;
 
 			System.out.println("Enter the first number:");
-			f1 = Integer.parseInt(in.nextLine());
+			f1 = in.nextDouble();
 
 			System.out.println("Enter the second number:");
-			f2 = Integer.parseInt(in.nextLine());
+			f2 = in.nextDouble();
 
 			division(f1,f2);
 		}
