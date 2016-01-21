@@ -56,6 +56,11 @@ font-size: 24px;
 
 }
 
+.profile-img{
+	height: 20%;
+	width: 20%;
+}
+
 .profile-img-card {
     width: 96px;
     height: 96px;
@@ -205,11 +210,12 @@ $( document ).ready(function() {
 
     $(".btn").click(function(){
     	$('#login').children().hide();
-    	$('.card').css({"max-width":"80%"});
+    	$('.card').css({"max-width":"150%"});
         $('#unhid').removeClass('hid').show();
         $('#mail').text($('#inputEmail').val());
         $('#pwd').text($('#inputPassword').val());
         $('#pic').attr("src", $('#profile-img').attr("src"));
+        $('#pic').css({"width":"50px"});
         $('.todo').load('toDoList.html');
     		return false
     	
