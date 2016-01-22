@@ -19,12 +19,15 @@
 }
 .yet{
   background-color: #66CC99;
+  height: 300px;
 }
 .progres{
   background-color: #2ECC71;
+  height: 300px;
 }
 .complete{
   background-color: #26A65B; 
+  height: 300px;
 }
     </style>
 
@@ -38,7 +41,7 @@
       <h3>Your task manager</h3>
         <div class="panel">
           <form class="formone">      
-            <input id="tsk" style="width:400px" type="text" placeholder="Enter task here" required reautofocus>
+            <input id="tsk" style="width:200px" type="text" placeholder="Enter task here" required reautofocus>
             <label>Start time:</label>
             <input id="Sdate" type="date" placeholder="Start Date" required>
             <label>End time:</label>
@@ -81,29 +84,30 @@
     })
 
     $(document).on('click', '.remove', function() 
-	{
-		$(this).parent().remove();
+  	{
+  		$(this).parent().remove();
+  		return false
+  	})
+
+  	$(document).on('click', '.move', function() 
+  	{
+  		$('#inprog').append($(this).parent().html());
+  		$(this).parent().remove();
+      $(this).parent().remove();
+  		return false
+  	})
+
+  	$(document).on('click', '.move', function() 
+  	{
+  		$('#comp').append($(this).parent().html());
+      //$('#comp').remove($('this').parent().remove());    
+      //$('#comp').append($(this).parent().html());
+  		
+
 		return false
-	})
+	  })
 
-	$(document).on('click', '.move', function() 
-	{
-		$('#inprog').append($(this).parent().html());
-		$(this).parent().remove();
-		return false
-	})
-
-	$(document).on('click', '.move', function() 
-	{
-		$('#comp').append($(this).parent().html());
-		$('this').parent().remove();
-		return false
-	})
-
-	
-	
-
-    
+	    
   });
 
 
