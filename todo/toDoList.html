@@ -93,15 +93,16 @@
   	{
   		$('#inprog').append($(this).parent().html());
   		$(this).parent().remove();
-      $(this).parent().remove();
+      
   		return false
   	})
 
   	$(document).on('click', '.move', function() 
   	{
-  		$('#comp').append($(this).parent().html());
-      //$('#comp').remove($('this').parent().remove());    
-      //$('#comp').append($(this).parent().html());
+  		
+      $('#comp').append($(this).parent().html());
+      $('#comp').remove($('this').parent().remove());    
+      $('#comp').append($(this).parent().html());
   		
 
 		return false
